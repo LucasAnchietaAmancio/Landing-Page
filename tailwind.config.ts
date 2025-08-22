@@ -10,9 +10,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['Urbanist', 'sans-serif'],
+        headline: ['Urbanist', 'sans-serif'],
         code: ['monospace'],
+      },
+      backgroundImage: {
+        'gradient-green': 'linear-gradient(to right, #15DF50, #0AC062)',
+        'gradient-blue': 'linear-gradient(to right, #03569A, #46B6C3)',
       },
       colors: {
         background: 'hsl(var(--background))',
