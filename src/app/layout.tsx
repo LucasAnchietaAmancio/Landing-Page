@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Global Tintas Web Showcase',
+  title: 'Global Tintas',
   description: 'Especialistas em tintas e vernizes para os setores industrial e automotivo.',
 };
 
