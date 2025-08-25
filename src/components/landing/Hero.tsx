@@ -1,28 +1,55 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative h-[60vh] md:h-[85vh] w-full flex items-center justify-center text-center text-white">
-      <div 
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: "url('https://placehold.co/1200x800.png')" }}
+    <section
+      id="home"
+      className="relative h-[60vh] md:h-[75vh] min-h-[400px] w-full flex items-center"
+    >
+      {/* Background Image */}
+      <div
+        className="absolute top-0 left-0 w-full h-full bg-cover md:bg-center bg-no-repeat"
+        style={{ backgroundImage: "url(/Slider.png)" }}
         data-ai-hint="paint factory"
       >
-        <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
+        <div className="absolute top-0 left-0 w-full h-full/10"></div>
       </div>
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 drop-shadow-lg">
-          Excelência em Tintas e Vernizes
-        </h1>
-        <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-200 mb-8 drop-shadow-md">
-          Fornecemos soluções de alta performance para os setores industrial e automotivo, com a qualidade e confiança que só a Global Tintas e Vernizes oferece.
-        </p>
-        <Button size="lg" className="bg-gradient-green text-white font-bold text-lg hover:opacity-90 transition-opacity px-8 py-6">
-          Conheça nossas soluções
-        </Button>
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
+        <div className="max-w-[250px] md:max-w-[650px]">
+          <h1 className="text-2xl md:text-6xl font-medium tracking-tight mb-2 text-[#5A5A5A]">
+            Procurando{' '}
+            <strong className="bg-clip-text text-transparent bg-[#00569D] from-[#15DF50] to-[#0AC062]">
+              Tinta Eletrostática
+            </strong>{' '}
+            ou{' '}
+            <strong className="bg-clip-text text-transparent bg-[#00569D] from-[#15DF50] to-[#0AC062]">
+              Verniz Eletroisolante
+            </strong>{' '}
+            para o seu motor?
+          </h1>
+
+          <p className="max-w-1xl text-m md:text-xl text-[#5A5A5A] mb-8 drop-shadow-md">
+            Fornecemos soluções de alta performance para os setores industrial e automotivo, com a qualidade e confiança que só a Global Tintas e Vernizes oferece.
+          </p>
+
+          <Link
+              href="https://api.whatsapp.com/send?phone=556696520091&text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20melhor%20os%20produtos%20e%20pre%C3%A7os%20de%20voc%C3%AAs%2E"
+              target="_blank"
+            >
+              <Button
+                size="lg"
+                className="bg-gradient-blue text-white font-bold text-lg hover:opacity-90 transition-opacity px-8 py-6 flex items-center justify-between"
+              >
+                Fale com nosso time
+              </Button>
+            </Link>
+        </div>
       </div>
     </section>
   );

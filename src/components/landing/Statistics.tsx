@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link'
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -7,7 +8,7 @@ import { Building, Droplets, Medal, Users, Truck, CreditCard, Sparkles } from 'l
 
 const stats = [
   { icon: <Sparkles className="h-8 w-8 text-primary" />, value: "+12", label: "Anos no Mercado" },
-  { icon: <Building className="h-8 w-8 text-primary" />, value: "+500", label: "Projetos Concluídos" },
+  { icon: <Building className="h-8 w-8 text-primary" />, value: "+500", label: "Orçamentos no Mês" },
   { icon: <Droplets className="h-8 w-8 text-primary" />, value: "+120K", label: "Litros Vendidos" },
   { icon: <Medal className="h-8 w-8 text-primary" />, value: "WEG", label: "Revendedor Autorizado" },
 ];
@@ -61,9 +62,14 @@ const Statistics = () => {
         </div>
         
         <div className="text-center mt-16">
+        <Link
+              href="https://api.whatsapp.com/send?phone=556696520091&text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20melhor%20os%20produtos%20e%20pre%C3%A7os%20de%20voc%C3%AAs%2E"
+              target="_blank"
+            >
           <Button size="lg" className="bg-gradient-blue text-white font-bold text-lg hover:opacity-90 transition-opacity px-8 py-6">
             Fale com um especialista
           </Button>
+        </Link>
         </div>
       </div>
     </section>

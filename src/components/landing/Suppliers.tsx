@@ -4,17 +4,16 @@ import React from 'react';
 import Image from 'next/image';
 
 const supplierLogos = [
-  { src: "https://placehold.co/150x60.png", alt: "WEG Logo", hint: "weg logo" },
-  { src: "https://placehold.co/150x60.png", alt: "Supplier Logo 2", hint: "supplier logo" },
-  { src: "https://placehold.co/150x60.png", alt: "Supplier Logo 3", hint: "supplier logo" },
-  { src: "https://placehold.co/150x60.png", alt: "Supplier Logo 4", hint: "supplier logo" },
-  { src: "https://placehold.co/150x60.png", alt: "Supplier Logo 5", hint: "supplier logo" },
-  { src: "https://placehold.co/150x60.png", alt: "Supplier Logo 6", hint: "supplier logo" },
+  { src: "/FLEXCOLLOR TINTA.png", alt: "Flex Logo", hint: "weg logo" },
+  { src: "/PERFECTO CORTE TINTA.png", alt: "Supplier Logo 2", hint: "supplier logo" },
+  { src: "/NORTON TINTA.png", alt: "Supplier Logo 3", hint: "supplier logo" },
+  { src: "/FARBEN TINTA.png", alt: "Supplier Logo 4", hint: "supplier logo" },
+  { src: "/WEG TINTA.png", alt: "Supplier Logo 5", hint: "supplier logo" },
 ];
 
 const Suppliers = () => {
   return (
-    <section className="py-12 bg-secondary">
+    <section className="py-12 bg-[#f4f7f9]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h3 className="text-center text-2xl font-semibold text-muted-foreground mb-8">
           Nossos Parceiros e Fornecedores

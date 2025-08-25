@@ -8,32 +8,25 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: '@cliente_satisfeito',
-    image: 'https://placehold.co/100x100.png',
+    name: '@Iury Philipy',
+    image: 'https://lh3.googleusercontent.com/a-/ALV-UjXJVd0s5I_ZkqrTmZ9qyVfmVeioCU_rqhREOASNMTLB3eLhThjHAw=w72-h72-p-rp-mo-br100',
     imageHint: 'client photo',
     rating: 5,
-    comment: 'A qualidade das tintas WEG é incomparável! A entrega foi super rápida e o atendimento da Global Tintas é excelente. Recomendo!',
+    comment: 'Excelente atendimento e os preços são ótimos!',
   },
   {
-    name: '@oficina_premium',
-    image: 'https://placehold.co/100x100.png',
+    name: '@Lucas Anchieta',
+    image: 'https://lh3.googleusercontent.com/a/ACg8ocIDKYCIkc65PYG9SvqmgSGI-UHobS4_nrQSoAuK8RwVM6xycv4=w72-h72-p-rp-mo-br100',
     imageHint: 'client photo',
     rating: 5,
-    comment: 'Compramos sempre para nossa oficina. A durabilidade e o acabamento são fantásticos. A entrega rápida nos ajuda a não parar a produção.',
+    comment: 'Ótimo preço!',
   },
   {
-    name: '@industria_forte',
-    image: 'https://placehold.co/100x100.png',
+    name: '@Giovana Nunes',
+    image: 'https://lh3.googleusercontent.com/a/ACg8ocImR-0b0LPMvaQEvIzHEx_boTIQiaxEN87-zutbYiIGjVEIaQ=w72-h72-p-rp-mo-br100',
     imageHint: 'client photo',
     rating: 4,
-    comment: 'Ótimos produtos e um suporte técnico que realmente entende do assunto. A parceria com a Global Tintas foi um diferencial para nós.',
-  },
-   {
-    name: '@construtora_abc',
-    image: 'https://placehold.co/100x100.png',
-    imageHint: 'client photo',
-    rating: 5,
-    comment: 'A agilidade na entrega é um ponto muito forte. Conseguimos manter o cronograma da obra em dia graças à eficiência da equipe.',
+    comment: 'Produtos excelentes!',
   },
 ];
 
