@@ -35,6 +35,17 @@ export default function RootLayout({
           }}
         />
         {/* End Google Tag Manager */}
+
+        {/* Google tag (gtag.js) */ }
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4XZXKF873"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Y4XZXKF873');
+        </script>
+        
       </head>
       <body className="font-body antialiased">
         {/* Google Tag Manager (noscript) */}
