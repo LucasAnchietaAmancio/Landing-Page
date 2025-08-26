@@ -43,6 +43,7 @@ const Hero = () => {
               target="_blank"
             >
               <Button
+                id="btn-whatsapp"
                 size="lg"
                 className="bg-gradient-blue text-white font-bold text-lg hover:opacity-90 transition-opacity px-8 py-6 flex items-center justify-between"
               >

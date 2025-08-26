@@ -50,7 +50,7 @@ const Sectors = () => {
               href="https://api.whatsapp.com/send?phone=556696520091&text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20melhor%20os%20produtos%20e%20pre%C3%A7os%20de%20voc%C3%AAs%2E"
               target="_blank"
             >
-        <Button size="lg" className="bg-gradient-blue text-white font-bold text-lg hover:opacity-90 transition-opacity px-8 py-6">
+        <Button id="btn-whatsapp" size="lg" className="bg-gradient-blue text-white font-bold text-lg hover:opacity-90 transition-opacity px-8 py-6">
           Solicite um orçamento
         </Button>
         </Link>

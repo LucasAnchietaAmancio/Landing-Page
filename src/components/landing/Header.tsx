@@ -76,6 +76,7 @@ const Header = () => {
               onClick={() => setIsMenuOpen && setIsMenuOpen(false)}
             >
               <Button
+                id="btn-whatsapp"
                 size="lg"
                 className="bg-gradient-green from-[#15DF50] to-[#0AC062] text-white font-bold text-lg hover:opacity-90 transition-opacity px-8 py-6 flex items-center justify-between"
               >
