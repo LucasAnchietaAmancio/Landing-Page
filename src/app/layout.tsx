@@ -34,18 +34,19 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* End Google Tag Manager */}
 
-        {/* Google tag (gtag.js) */ }
+        {/* Google Analytics 4 */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4XZXKF873"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-Y4XZXKF873');
-        </script>
-        
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-Y4XZXKF873');
+            `,
+          }}
+        />
       </head>
       <body className="font-body antialiased">
         {/* Google Tag Manager (noscript) */}
@@ -57,7 +58,6 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        {/* End Google Tag Manager (noscript) */}
 
         {children}
         <Toaster />
