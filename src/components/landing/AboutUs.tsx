@@ -25,7 +25,7 @@ const AboutUs = () => {
 
           {/* Imagem */}
           <div className="flex justify-center">
-            <Card className="relative w-full max-w-lg h-[300px] md:h-[400px] overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-105">
+            <Card className="relative w-full max-w-lg h-[300px] md:h-[700px] overflow-hidden rounded-2xl shadow-2xl ">
               <Image
                 src="/Empresa.jpeg"
                 alt="Foto da empresa Global Tintas e Vernizes"

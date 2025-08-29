@@ -98,22 +98,21 @@ const Header = () => {
                 className="w-[300px] sm:w-[400px] bg-background"
               >
                 <div className="flex flex-col h-full">
-                  <div className="flex justify-between items-center p-4 border-b">
+                  <div className="flex justify-center items-center p-4 border-b">
                     <Link
                       href="/"
                       className="text-xl font-bold text-primary"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      GlobalTintas
+                     <Image
+                      src="/logo.png"
+                      alt="Logo"
+                      width={150}
+                      height={150}
+                      className="rounded-full"
+                    />
                     </Link>
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      <X className="h-6 w-6" />
-                      <span className="sr-only">Fechar menu</span>
-                    </Button>
+
                   </div>
                   <div className="flex flex-col items-center justify-center flex-1 gap-8">
                     {navLinks.map((link) => (

@@ -12,7 +12,7 @@ const Hero = () => {
     >
       {/* Background Image */}
       <div
-        className="absolute top-0 left-0 w-full h-full bg-cover md:bg-center bg-no-repeat"
+        className="absolute top-0 left-0 w-full h-full bg-cover bg-[center_left_32%] md:bg-center bg-no-repeat"
         style={{ backgroundImage: "url(/Slider.png)" }}
         data-ai-hint="paint factory"
       >
@@ -22,7 +22,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
         <div className="max-w-[250px] md:max-w-[650px]">
-          <h1 className="text-2xl md:text-5xl font-medium tracking-tight mb-2 text-[#5A5A5A]">
+          <h1 className="text-1xl md:text-5xl font-medium tracking-tight mb-2 text-[#5A5A5A]">
             Precisa de{' '}
             <strong className="bg-clip-text text-transparent bg-[#00569D] from-[#15DF50] to-[#0AC062]">
               Tinta em Pó Eletrostática
@@ -34,7 +34,7 @@ const Hero = () => {
             Conte com a gente para a solução ideal.
           </h1>
 
-          <p className="max-w-1xl text-m md:text-xl text-[#5A5A5A] mb-8 drop-shadow-md">
+          <p className="max-w-xl text-sm md:text-xl text-[#5A5A5A] mb-8 drop-shadow-md">
              Fornecemos soluções de alta performance para pintura de estruturas metálicas e aplicações industriais, com a qualidade e confiança que só a Global Tintas e Vernizes oferece.
           </p>
 
@@ -45,7 +45,7 @@ const Hero = () => {
               <Button
                 id="btn-whatsapp"
                 size="lg"
-                className="bg-gradient-blue text-white font-bold text-lg hover:opacity-90 transition-opacity px-8 py-6 flex items-center justify-between"
+                className="bg-gradient-blue text-white font-bold text-lg hover:opacity-90 transition-opacity py-6 flex items-center justify-between"
               >
                 Fale com nosso time
               </Button>
