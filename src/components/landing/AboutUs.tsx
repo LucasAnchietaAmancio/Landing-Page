@@ -27,7 +27,7 @@ const AboutUs = () => {
           <div className="flex justify-center">
             <Card className="relative w-full max-w-lg h-[300px] md:h-[700px] overflow-hidden rounded-2xl shadow-2xl ">
               <Image
-                src="/Empresa.jpeg"
+                src="/EmpresaNew.jpeg"
                 alt="Foto da empresa Global Tintas e Vernizes"
                 fill
                 className="object-cover"
