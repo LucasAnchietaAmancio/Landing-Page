@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { FaCheckCircle } from "react-icons/fa";
+import Image from "next/image";
 
 const Hero = () => {
   const benefits = [
@@ -17,11 +18,16 @@ const Hero = () => {
       className="relative h-[60vh] md:h-[75vh] min-h-[400px] w-full flex items-center"
     >
       {/* Background Image */}
-      <div
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-[center_left_32%] sm:bg-center md:bg-center bg-no-repeat"
-        style={{ backgroundImage: "url(/Slider.png)" }}
-      >
-        <div className="absolute top-0 left-0 w-full h-full "></div>
+      <div className="absolute top-0 left-0 w-full h-full">
+        <Image
+          src="/Slide.webp"
+          alt="Slide"
+          fill // Faz a imagem ocupar toda a div pai
+          className="object-cover object-[32%_center] sm:object-center md:object-center"
+          quality={75}
+          priority
+        />
+        <div className="absolute top-0 left-0 w-full h-full"></div>
       </div>
 
       {/* Content */}
@@ -53,7 +59,9 @@ const Hero = () => {
               </li>
             ))}
           </ul>
-
+          <p className="text-xs sm:text-base md:text-xl text-[#5A5A5A] mb-6 md:mb-8 drop-shadow-md">
+             Galão de 3,6L a partir de  <strong className="bg-clip-text text-transparent bg-gradient-to-r from-[#00569D] to-[#0AC062]"> R$ 87,99</strong>
+          </p>
           <Link
             href="https://api.whatsapp.com/send?phone=556696520091&text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20melhor%20os%20produtos%20e%20pre%C3%A7os%20de%20voc%C3%AAs%2E"
             target="_blank"
